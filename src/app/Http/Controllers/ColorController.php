@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Book;
 use App\Author;
 use App\Book_master;
+use App\Author_master;
 
 class ColorController extends Controller
 {
@@ -38,6 +39,15 @@ class ColorController extends Controller
         $books->save();
 
         return redirect()->back();
+    }
 
+    public function author_list()
+    {
+        $author_lists = Author_master::orderBy('created_at','desc')->get();
+
+        $data =[
+            "author_lists" => $author_lists
+        ];
+        return view('author_list')->with($data);
     }
 }
