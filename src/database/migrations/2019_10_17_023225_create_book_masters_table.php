@@ -16,6 +16,9 @@ class CreateBookMastersTable extends Migration
         Schema::create('book_masters', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
+            $table->string('image')->nullable();
+            $table->string('default_color')->nullable();
+            $table->string('average_color')->nullable();
             $table->bigInteger('author_id')->unsigned();
             $table->timestamps();
 
