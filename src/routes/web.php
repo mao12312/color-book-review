@@ -26,3 +26,7 @@ Route::get('/book/create/{id}', 'ColorController@book_create');
 Route::post('/book/create/{id}/store', 'ColorController@book_store');
 
 Route::get('/author_list','ColorController@author_list');
+
+Route::get('/author/create/{id}', 'ColorController@author_create');
+
+Route::post('/author/create/{id}/store', 'ColorController@author_store');

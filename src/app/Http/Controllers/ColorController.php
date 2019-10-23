@@ -12,9 +12,9 @@ class ColorController extends Controller
 {
     public function book_list()
     {
-        $book_lists = Book_master::orderBy('created_at','desc')->get();
+        $book_lists = Book_master::orderBy('created_at', 'desc')->get();
 
-        $data =[
+        $data = [
             "book_lists" => $book_lists
         ];
         return view('book_list')->with($data);
@@ -25,7 +25,7 @@ class ColorController extends Controller
         $book = Book_master::findOrFail($id);
 
         $data = [
-          'book' => $book,
+            'book' => $book,
         ];
 
         return view('book.create')->with($data);
@@ -42,7 +42,7 @@ class ColorController extends Controller
         $books = Book::where('book_id', $request->book_id)->get();
 
         $book_colors = [];
-        foreach ($books as $book){
+        foreach ($books as $book) {
             $book_color_code = ltrim($book->color, '#');
             $book_rgb = str_split($book_color_code, 2);
             array_push($book_colors, $book_rgb);
@@ -60,32 +60,91 @@ class ColorController extends Controller
 
 
         }
-        $last_number =  Book::where('book_id', $request->book_id)->count();
+        $last_number = Book::where('book_id', $request->book_id)->count();
 
 
-        $book_r_avg = round($book_r10/$last_number);
+        $book_r_avg = round($book_r10 / $last_number);
         $book_r = dechex($book_r_avg);
 
-        $book_g_avg = round($book_g10/$last_number);
+        $book_g_avg = round($book_g10 / $last_number);
         $book_g = dechex($book_g_avg);
 
-        $book_b_avg = round($book_b10/$last_number);
+        $book_b_avg = round($book_b10 / $last_number);
         $book_b = dechex($book_b_avg);
 
-        $book_rgb = "#".$book_r.$book_g.$book_b;
+        $book_rgb = "#" . $book_r . $book_g . $book_b;
 
-        Book_master::where('id',$request->book_id)->update(['average_color' => $book_rgb]);
+        Book_master::where('id', $request->book_id)->update(['average_color' => $book_rgb]);
 
         return redirect()->back();
     }
 
     public function author_list()
     {
-        $author_lists = Author_master::orderBy('created_at','desc')->get();
+        $author_lists = Author_master::orderBy('created_at', 'desc')->get();
 
-        $data =[
+        $data = [
             "author_lists" => $author_lists
         ];
         return view('author_list')->with($data);
+    }
+
+    public function author_create($id)
+    {
+        $author = Author_master::findOrFail($id);
+
+        $data = [
+            'author' => $author,
+        ];
+
+        return view('author.create')->with($data);
+    }
+
+    public function author_store(Request $request)
+    {
+        $authors = new Author;
+        $authors->color = $request->color;
+        $authors->author_id = $request->author_id;
+        $authors->save();
+
+
+        $authors = Author::where('author_id', $request->author_id)->get();
+
+        $author_colors = [];
+        foreach ($authors as $author) {
+            $author_color_code = ltrim($author->color, '#');
+            $author_rgb = str_split($author_color_code, 2);
+            array_push($author_colors, $author_rgb);
+
+        }
+
+        $author_r10 = 0;
+        $author_g10 = 0;
+        $author_b10 = 0;
+
+        foreach ($author_colors as $author_color) {
+            $author_r10 += hexdec($author_color[0]);
+            $author_g10 += hexdec($author_color[1]);
+            $author_b10 += hexdec($author_color[2]);
+
+
+        }
+        $last_number = Author::where('author_id', $request->author_id)->count();
+
+
+        $author_r_avg = round($author_r10 / $last_number);
+        $author_r = dechex($author_r_avg);
+
+        $author_g_avg = round($author_g10 / $last_number);
+        $author_g = dechex($author_g_avg);
+
+        $author_b_avg = round($author_b10 / $last_number);
+        $author_b = dechex($author_b_avg);
+
+        $author_rgb = "#" . $author_r . $author_g . $author_b;
+
+        Author_master::where('id', $request->author_id)->update(['average_color' => $author_rgb]);
+
+        return redirect()->back();
     }
 }
