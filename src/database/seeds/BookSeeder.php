@@ -13,20 +13,20 @@ class BookSeeder extends Seeder
     {
         DB::table('books')->insert([
             [
-                'color'=>'#FFFF00',
+                'color'=>'#111111',
                 'book_id'=>1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'color'=>'#CC00FF',
+                'color'=>'#BFFF45',
                 'book_id'=>2,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
 
             ],
             [
-                'color'=>'#0000FF',
+                'color'=>'#FF8545',
                 'book_id'=>3,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),

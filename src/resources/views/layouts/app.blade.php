@@ -18,6 +18,18 @@
             Color Book Review
         </a>
     </div>
+
+    <div class="container">
+        <a class="navbar-brand" href="{{ url('/book_list') }}">
+            Book
+        </a>
+    </div>
+
+    <div class="container">
+        <a class="navbar-brand" href="{{ url('/author_list') }}">
+             Author
+        </a>
+    </div>
 </header>
 
 <div class="app">

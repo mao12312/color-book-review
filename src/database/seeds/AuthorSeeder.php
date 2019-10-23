@@ -13,20 +13,20 @@ class AuthorSeeder extends Seeder
     {
         DB::table('authors')->insert([
             [
-                'color'=>'#FFFF00',
+                'color'=>'#F0F0F0',
                 'author_id'=>1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
             [
-                'color'=>'#CC00FF',
+                'color'=>'#45FF62',
                 'author_id'=>2,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
 
             ],
             [
-                'color'=>'#0000FF',
+                'color'=>'#45B7FF',
                 'author_id'=>3,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
