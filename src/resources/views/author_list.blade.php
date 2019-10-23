@@ -11,7 +11,7 @@
                     <p class="card-text">
                         name
                     </p>
-                    <a class="card-link" href="/book/create/{{$author_list->id}}">
+                    <a class="card-link" href="/author/create/{{$author_list->id}}">
                         詳細
                     </a>
                 </div>
