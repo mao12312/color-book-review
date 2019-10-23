@@ -9,9 +9,7 @@ $ docker-compose exec app ash
 $ docker-compose exec web ash
 
 #dbコンテナ(Mysql等)
-$ docker-compose exec db bash
-$ mysql -u homested -p
-Enter password: **** 
+$ docker-compose exec db bash -c 'mysql -u${MYSQL_USER} -p${MYSQL_PASSWORD} ${MYSQL_DATABASE}'
 (dbのユーザ名パスワードは.envファイルにあらかじめ記入したものを使用)
 
 port:http://127.0.0.1:10080
