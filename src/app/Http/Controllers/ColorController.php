@@ -15,7 +15,7 @@ class ColorController extends Controller
         $book_lists = Book_master::orderBy('created_at', 'desc')->get();
 
         $data = [
-            "book_lists" => $book_lists
+            "book_lists" => $book_lists,
         ];
         return view('book_list')->with($data);
     }

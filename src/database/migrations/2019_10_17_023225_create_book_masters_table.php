@@ -17,6 +17,7 @@ class CreateBookMastersTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('image')->nullable();
+            $table->string('category')->nullable();
             $table->string('default_color')->nullable();
             $table->string('average_color')->nullable();
             $table->bigInteger('author_id')->unsigned();

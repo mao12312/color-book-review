@@ -17,6 +17,8 @@ class CreateAuthorMastersTable extends Migration
             $table->bigIncrements('id');
             $table->string('author');
             $table->string('image')->nullable();
+            $table->string('category')->nullable();
+            $table->string('masterpiece')->nullable();
             $table->string('default_color')->nullable();
             $table->string('average_color')->nullable();
             $table->timestamps();
