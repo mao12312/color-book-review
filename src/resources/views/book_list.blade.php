@@ -9,10 +9,10 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                       本
+                       {{$book_list->author->author}}
                     </p>
                     <a class="card-link" href="/book/create/{{$book_list->id}}">
-                        詳細
+                        個別ページ
                     </a>
                 </div>
                 <div class="card-footer">

@@ -8,11 +8,9 @@
                     {{ $author_list->author }}
                 </div>
                 <div class="card-body">
-                    <p class="card-text">
-                        name
-                    </p>
                     <a class="card-link" href="/author/create/{{$author_list->id}}">
-                        詳細
+                        <?php $image = $author_list->image; ?>
+                        <img src="{{asset('Author_img/'.$image)}}" alt="画像" style="width: 30%; height: 30%;">
                     </a>
                 </div>
                 <div class="card-footer">
