@@ -29,4 +29,51 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    components: {
+        ExampleComponent
+    }
+    // data() {
+    //     return{
+    //         loading: true,
+    //         loading2: false,
+    //         loading3: false
+    //     }
+    // },
+    // mounted() {
+    //     setTimeout(() => {
+    //         this.loading = false;
+    //         this.loading2 = true;
+    //             setTimeout(() => {
+    //                 this.loading2 = false;
+    //             }, 8000);
+    //         }, 4000);
+    //     setTimeout(() => {
+    //         this.loading3 =true;
+    //     },7000);
+    // }
 });
+
+// export default {
+//     el: "#about",
+//     data() {
+//         return{
+//         loading: true,
+//         loading2: false,
+//         loading3: false
+//         }
+//     },
+//     mounted() {
+//         setTimeout(() => {
+//         this.loading = false;
+//         this.loading2 = true;
+//         setTimeout(() => {
+//             this.loading2 = false;
+//         }, 8000);
+//         }, 4000);
+//         setTimeout(() => {
+//             this.loading3 =true;
+//         },7000);
+//     }
+
+
+    

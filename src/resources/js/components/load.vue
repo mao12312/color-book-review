@@ -1,5 +1,5 @@
 <template>
-    <div id="load">
+  <div id="load">
     <transition> 
       <div v-show="loading">
         <div class="book">
@@ -33,33 +33,3 @@
     </transition> -->
   </div>
 </template>
-
-<script>
-    // export default {
-    //     mounted() {
-    //         console.log('Component mounted.')
-    //     }
-    // }
-    export default {
-        el: "#load",
-        data() {
-            return{
-            loading: true,
-            loading2: false,
-            // loading3: false
-            }
-        },
-        mounted() {
-            setTimeout(() => {
-            this.loading = false;
-            this.loading2 = true;
-            setTimeout(() => {
-                this.loading2 = false;
-            }, 8000);
-            }, 4000);
-            // setTimeout(() => {
-            //     this.loading3 =true;
-            // },7000);
-        }
-    }
-</script>
