@@ -16,7 +16,7 @@
                             {{$author->author}}
                         </label>
                         <br>
-                        <select name="color">
+                        {{-- <select name="color">
                             <option value=" ">-----</option>
                             <option class="red" value="#FF4545">Red</option>
                             <option class="pink" value="#FF45E2">Pink</option>
@@ -30,7 +30,12 @@
                             <option class="orange" value="#FF8545">Orange</option>
                             <option class="black" value="#111111">Black</option>
                             <option class="white" value="#F0F0F0">White</option>
-                        </select>
+                        </select> --}}
+
+                        <input type="radio" name="color" value="#FF4545" class="red">red
+                        <input type="radio" name="color" value="#FF45E2" class="pink">pink
+                        <input type="radio" name="color" value="#9B45FF" class="purple">Purple
+                        <input type="radio" name="color" value="#455AFF" class="navy">navy
 
                         <input type="hidden" value="{{$author->id}}" name="author_id">
 
@@ -47,10 +52,19 @@
     </div>
 
     <script>
-        $('[name=color]').change(function() {
-            var color = $('[name=color]').val();
-            console.log(color)
-            $(".color").css("background-color", color);
+        // $('[name=color]').change(function() {
+        //     var color = $('[name=color]').val();
+        //     $(".color").css("background-color", color);
+        // });
+
+        $(function() {
+            //ラジオボタンをチェックしたら発動
+            $('input[type="radio"]').change(function() {
+                //選択したvalue値を変数に格納
+                var color = $(this).val();
+                //選択したvalue値をp要素に出力
+                $(".color").css("background-color", color);
+            });
         });
     </script>
 @endsection
