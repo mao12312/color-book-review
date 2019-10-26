@@ -63,7 +63,8 @@
             }
         </style>
     </head>
-    <body>
+    <body class="fadeout">
+        <a href="/book_list" class="navigate-anchor">book list へ</a>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
