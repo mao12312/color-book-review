@@ -1,26 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-4">
-        @foreach ($book_lists as $book_list)
-            <div class="card mb-4">
-                <div class="card-header">
-                    {{ $book_list->title }}
-                </div>
-                <div class="card-body">
-                    <p class="card-text">
-                       {{$book_list->author->author}}
-                    </p>
-                    <a class="card-link" href="/book/create/{{$book_list->id}}">
-                        個別ページ
+    <body>
+    @include('partials.header')
+    <main>
+        <div class="title">
+            <h2>PRODUCT<span>本・作品</span></h2>
+        </div>
+
+        <div class="row align-items-center">
+            @foreach ($book_lists as $book_list)
+                <div class="col-lg-3 product_card">
+                    <a href="/book/create/{{$book_list->id}}">
+                        <h6>{{$book_list->category}}</h6>
+                        <div class="text_area">
+                            <h4>{{ $book_list->title }}</h4>
+                            <h5>作：{{$book_list->author->author}}</h5>
+                            <span><i class='uil uil-comment-alt-notes'></i> {{$review_counts[($book_list->id)-1]}} review</span>
+                        </div>
                     </a>
                 </div>
-                <div class="card-footer">
-                    <span class="mr-2">
-                        投稿日時 {{ $book_list->created_at->format('Y.m.d') }}
-                    </span>
-                </div>
-            </div>
-        @endforeach
-    </div>
+            @endforeach
+        </div>
+    </main>
+    </body>
 @endsection
