@@ -7,6 +7,7 @@ use App\Book;
 use App\Author;
 use App\Book_master;
 use App\Author_master;
+use phpDocumentor\Reflection\Types\Array_;
 
 class ColorController extends Controller
 {
@@ -14,10 +15,19 @@ class ColorController extends Controller
     {
         $book_lists = Book_master::orderBy('created_at', 'desc')->get();
 
+        //review count
+        $review_counts = [];
+        foreach ($book_lists as $book_list) {
+            $review_count = Book::where('book_id', $book_list->id)->get()->count();
+            array_push($review_counts, $review_count);
+        }
+
         $data = [
             "book_lists" => $book_lists,
+            "review_counts" => $review_counts,
         ];
         return view('book_list')->with($data);
+
     }
 
     public function book_create($id)
@@ -81,10 +91,20 @@ class ColorController extends Controller
 
     public function author_list()
     {
+        // get author_master
         $author_lists = Author_master::orderBy('created_at', 'desc')->get();
 
+        //review count
+        $review_counts = [];
+        foreach ($author_lists as $author_list) {
+            $review_count = Author::where('author_id', $author_list->id)->get()->count();
+            array_push($review_counts, $review_count);
+        }
+
+        // post data to view
         $data = [
-            "author_lists" => $author_lists
+            "author_lists" => $author_lists,
+            "review_counts" => $review_counts
         ];
         return view('author_list')->with($data);
     }

@@ -12,11 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('guide1');
-});
-
-Route::get('/guide2', function () {
-    return view('guide2');
+    return view('guide');
 });
 
 Route::get('/book_list','ColorController@book_list');
