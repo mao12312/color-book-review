@@ -15,8 +15,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="406">
+                  <caret line="29" selection-start-line="29" selection-end-line="29" />
                   <folding>
                     <element signature="e#40#68#0#PHP" expanded="true" />
                   </folding>
@@ -58,8 +58,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/resources/views/book/create.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="539">
-                  <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+                <state relative-caret-position="224">
+                  <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -148,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/resources/views/partials/header.blade.php" />
         <option value="$PROJECT_DIR$/src/resources/views/author_list.blade.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/BookMasterSeeder.php" />
-        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php" />
         <option value="$PROJECT_DIR$/src/resources/views/book_list.blade.php" />
         <option value="$PROJECT_DIR$/src/resources/views/book/create.blade.php" />
+        <option value="$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php" />
       </list>
     </option>
   </component>
@@ -286,7 +286,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106327000" />
+    <option name="totallyTimeSpent" value="106572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -613,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="406">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
@@ -623,8 +623,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/views/book/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="224">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
