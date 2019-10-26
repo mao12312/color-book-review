@@ -27,6 +27,7 @@ class ColorController extends Controller
             "review_counts" => $review_counts,
         ];
         return view('book_list')->with($data);
+
     }
 
     public function book_create($id)
