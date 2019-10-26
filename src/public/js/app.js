@@ -49499,17 +49499,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "./resources/sass/style2.scss":
-/*!************************************!*\
-  !*** ./resources/sass/style2.scss ***!
-  \************************************/
-=======
 /***/ "./resources/sass/bookLoading.scss":
 /*!*****************************************!*\
   !*** ./resources/sass/bookLoading.scss ***!
   \*****************************************/
->>>>>>> master
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/style2.scss":
+/*!************************************!*\
+  !*** ./resources/sass/style2.scss ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49518,27 +49522,16 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-<<<<<<< HEAD
-/*!******************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/style2.scss ***!
-  \******************************************************************************************/
+/*!****************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/bookLoading.scss ./resources/sass/style2.scss ***!
+  \****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/ohmuramao/PhpstormProjects/color-book-review/src/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /Users/ohmuramao/PhpstormProjects/color-book-review/src/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/ohmuramao/PhpstormProjects/color-book-review/src/resources/sass/bookLoading.scss */"./resources/sass/bookLoading.scss");
 module.exports = __webpack_require__(/*! /Users/ohmuramao/PhpstormProjects/color-book-review/src/resources/sass/style2.scss */"./resources/sass/style2.scss");
-=======
-/*!***********************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/bookLoading.scss ***!
-  \***********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/sass/bookLoading.scss */"./resources/sass/bookLoading.scss");
->>>>>>> master
 
 
 /***/ })

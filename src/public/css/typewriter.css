@@ -4,9 +4,9 @@ html{
 }
 body{
   height: calc(100vh - 8em);
-  padding: 4em;
-  color: #000000; 
-  background-color: #ffffff;  
+  /*padding: 4em;*/
+  color: #000000;
+  background-color: #ffffff;
 }
 .line-1{
     position: relative;

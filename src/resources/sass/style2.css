@@ -108,8 +108,7 @@ h6,
       .home_fill .back_button a:hover {
         background: #ddd; }
   .home_fill .carousel {
-    height: -webkit-fill-available;
-    height: fill-available; }
+    height: -webkit-fill-available; }
     .home_fill .carousel .carousel-indicators {
       margin-bottom: 3rem; }
       .home_fill .carousel .carousel-indicators li {

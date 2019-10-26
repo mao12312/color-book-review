@@ -12,11 +12,8 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-<<<<<<< HEAD
-    .sass('resources/sass/app.scss', 'public/css')
-    .sass('resources/sass/style2.scss', 'public/css');
-=======
     .js('resources/js/sample.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .sass('resources/sass/bookLoading.scss', 'public/css');
->>>>>>> master
+    .sass('resources/sass/bookLoading.scss', 'public/css')
+    .sass('resources/sass/style2.scss', 'public/css');
+
