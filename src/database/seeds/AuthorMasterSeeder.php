@@ -186,7 +186,7 @@ class AuthorMasterSeeder extends Seeder
                 'author'=> '又吉 直樹',
                 'image'=>'creator18.png',
                 'category'=>'小説家',
-                'masterpiece'=>'吾輩は猫である',
+                'masterpiece'=>'火花、劇場',
                 'default_color'=>'#F0F0F0',
                 'average_color'=>'#F0F0F0',
                 'created_at' => date('Y-m-d H:i:s'),

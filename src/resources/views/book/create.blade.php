@@ -4,7 +4,7 @@
     <body class="home_fill">
     <div class="container-fluid">
         <div class="back_button">
-            <a href="product.html">
+            <a href="{{url('/book_list')}}">
                 <i class='uil uil-arrow-left'></i>
             </a>
         </div>
@@ -13,14 +13,16 @@
                 <img src="{{asset('Author_img/creator1.png')}}" alt="">
                 <div class="overlay">
                     <div class="text_area">
-                        <h6>漫画</h6>
-                        <h3>ONE PIECE</h3>
-                        <h5>作：尾田栄一郎</h5>
+                        <h6>{{$book->category}}</h6>
+                        <h3>{{$book->title}}</h3>
+                        <h5>作：{{$book->author->author}}</h5>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-6 color_palette">
+            <form class="col-lg-6 color_palette" method="POST" action="/book/create/{{$book->id}}/store">
+                @csrf
+                <input type="hidden" value="{{$book->id}}" name="book_id">
                 <div class="row radio-tile-group mb-5">
                     <div class="col-lg-3 input-container">
                         <input id="walk" class="radio-button red" type="radio" name="color" value="#FF4545"/>
@@ -118,12 +120,12 @@
                         <label for="fly" class="radio-tile-label">White</label>
                     </div>
                 </div>
-                <button href="#" role="button" data-slide="next" class="arrow_btn w-100 start"
-                        onclick="location.href='product_review.html'">
+                <button type="submit" role="button" data-slide="next" class="arrow_btn w-100 start"
+                        onclick="location.href='/book/result/{{$book->id}}'">
                     レビューする
                     <span><i class='uil uil-angle-right-b'></i></span>
                 </button>
-            </div>
+            </form>
         </div>
     </div>
     </body>
@@ -135,8 +137,8 @@
         //     $(".color").css("background-color", color);
         // });
 
-        $(function() {
-            $('input[type="radio"]').change(function() {
+        $(function () {
+            $('input[type="radio"]').change(function () {
                 var color = $(this).val();
                 $(".overlay").css("background", color);
             });

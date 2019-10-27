@@ -86,7 +86,27 @@ class ColorController extends Controller
 
         Book_master::where('id', $request->book_id)->update(['average_color' => $book_rgb]);
 
-        return redirect()->back();
+        //book result view
+        $book = Book_master::findOrFail($request->id);
+        $book_lists = Book_master::orderBy('created_at', 'desc')->get();
+
+        $data = [
+            'book' => $book,
+            'book_lists'=>$book_lists
+        ];
+
+//        return redirect()->route('book_result');
+        return view('book.result')->with($data);
+    }
+    public function book_result($id)
+    {
+        $book = Book_master::findOrFail($id);
+
+        $data = [
+            'book' => $book,
+        ];
+
+        return view('book.result')->with($data);
     }
 
     public function author_list()

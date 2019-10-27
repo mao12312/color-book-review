@@ -1,6 +1,6 @@
 <header>
     <div class="header_logo">
-        <img src="img/logo.png" alt="color book review" class="img-fluid">
+        <img src="{{asset('img/logo.png')}}" alt="color book review" class="img-fluid">
     </div>
     <nav>
         <ul>

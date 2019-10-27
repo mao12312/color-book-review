@@ -38,9 +38,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="{{ asset('css/bookLoading.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/typewriter.css') }}" rel="stylesheet" type="text/css">
+{{--    <link href="{{ asset('css/typewriter.css') }}" rel="stylesheet" type="text/css">--}}
     <script src="{{ asset('js/sample.js') }}" defer></script>
     <link type="text/css" rel="stylesheet" href="{{asset('css/style2.css')}}" />
+    @yield('head')
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
