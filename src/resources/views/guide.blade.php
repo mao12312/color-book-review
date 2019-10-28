@@ -57,7 +57,7 @@
                                     新しいスタンダードを。</h1>
                                 <p><span>“本の共感覚化としての⾊覚化” </span><br>千年後、この⺠主的な『COLOR BOOK REVIEW』は当たり前<br>のように読者の判断基準の1つになっているのかも知れない。
                                 </p>
-                                <a href="{{'author_list'}}" role="button" data-slide="next" class="arrow_btn start">
+                                <a href="{{'book_list'}}" role="button" data-slide="next" class="arrow_btn start" id="start">
                                     START
                                     <span><i class='uil uil-angle-right-b'></i></span>
                                 </a>
@@ -73,4 +73,11 @@
         </div>
     </div>
     </body>
+    <script>
+        $(function(){
+            $('#start').click(function(){
+                $('.app').fadeOut(1500);
+            });
+        });
+    </script>
 @endsection
