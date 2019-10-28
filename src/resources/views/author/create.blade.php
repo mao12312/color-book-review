@@ -41,9 +41,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 color_palette">
-                <div class="row radio-tile-group mb-5">
+            <form class="col-lg-6 color_palette" method="POST" action="/author/create/{{$author->id}}/store">
+                @csrf
+                <input type="hidden" value="{{$author->id}}" name="author_id">
 
+                <div class="row radio-tile-group mb-5">
                     <div class="col-lg-3 input-container">
                         <input id="walk" class="radio-button red" type="radio" name="color" value="#FF4545"/>
                         <div class="radio-tile"
@@ -140,12 +142,12 @@
                         <label for="fly" class="radio-tile-label">White</label>
                     </div>
                 </div>
-            </div>
-            <button href="#" role="button" data-slide="next" class="arrow_btn w-100 start"
-                    onclick="location.href='creator_review.html'">
-                レビューする
-                <span><i class='uil uil-angle-right-b'></i></span>
-            </button>
+                <button type="submit" role="button" data-slide="next" class="arrow_btn w-100 start"
+                        onclick="location.href='/author/result/{{$author->id}}'">
+                    レビューする
+                    <span><i class='uil uil-angle-right-b'></i></span>
+                </button>
+            </form>
         </div>
     </div>
 

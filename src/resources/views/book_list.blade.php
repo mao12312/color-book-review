@@ -32,7 +32,7 @@
                         <h6>{{$book_list->category}}</h6>
                         <div class="text_area">
                             <h4>{{ $book_list->title }}</h4>
-                            <h5>作：{{$book_list->author->author}}</h5>
+                            <h5>作：{{$book_list->author}}</h5>
                             <span><i class='uil uil-comment-alt-notes'></i> {{$review_counts[($book_list->id)-1]}} review</span>
                         </div>
                     </a>

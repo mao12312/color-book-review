@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Author_master extends Model
 {
-    public function book()
-    {
-        return $this->hasMany('App\Book_master');
-    }
+//    public function book()
+//    {
+//        return $this->hasMany('App\Book_master');
+//    }
 
     public function author()
     {

@@ -15,7 +15,7 @@
                     <div class="text_area">
                         <h6>{{$book->category}}</h6>
                         <h3>{{$book->title}}</h3>
-                        <h5>作：{{$book->author->author}}</h5>
+                        <h5>作：{{$book->author}}</h5>
                     </div>
                 </div>
             </div>
