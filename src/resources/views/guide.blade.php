@@ -57,7 +57,7 @@
                                     新しいスタンダードを。</h1>
                                 <p><span>“本の共感覚化としての⾊覚化” </span><br>千年後、この⺠主的な『COLOR BOOK REVIEW』は当たり前<br>のように読者の判断基準の1つになっているのかも知れない。
                                 </p>
-                                <a href="{{'book_list'}}" role="button" data-slide="next" class="arrow_btn start" id="start">
+                                <a href="#" role="button" data-slide="next" class="arrow_btn start" id="start">
                                     START
                                     <span><i class='uil uil-angle-right-b'></i></span>
                                 </a>
@@ -72,12 +72,47 @@
             </div>
         </div>
     </div>
+
+    <div class="book" style="display: none;">
+        <div class="book__page"></div>
+        <div class="book__page"></div>
+        <div class="book__page"></div>
+    </div>
+
+    <div class="typewrite" style="display: none;">
+        <h1 class="line-1 anim-typewriter">Color Book Review</h1>
+        <div class="loading3" style="display: none;">
+            <h3 class="line-1" enter-class="animated fadeIn delay">“本”という文字情報を”色”という別の情報でレビューする</h3>
+            <p>本の共感覚化としての⾊覚化
+                全く新しい情報だが、これが百年千年と続けば、
+                リテラシーは、後から追い付いてくるのではないか
+                千年後、この⺠主的な『COLOR BOOK REVIEW』は当たり前のように
+                読者の判断基準の⼀つになっているかも知れない</p>
+        </div>
+    </div>
     </body>
     <script>
-        $(function(){
-            $('#start').click(function(){
-                $('.app').fadeOut(1500);
-            });
+        $("#start").on('click',function(event){
+            event.preventDefault();
+            
+            var linkUrl = $(this).attr('href');
+            $('#carouselExampleIndicators').fadeOut(1000);
+            $('.book').hide().fadeIn(1500);
+            
+            setTimeout(function(){
+                $('.book').fadeOut(1000);
+                $('.typewrite').fadeIn(1000);
+                setTimeout(function(){
+                    $('.loading3').fadeIn(1000);
+                },4000);
+            },4000);
+            setTimeout(function(){
+                $('.typewrite').fadeOut(1000);
+            },12000);
+
+            setTimeout(function() {
+                window.location.href = '/author_list';
+            }, 12000);
         });
     </script>
 @endsection

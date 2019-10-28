@@ -152,18 +152,10 @@
     </body>
 
     <script>
-        // $('[name=color]').change(function() {
-        //     var color = $('[name=color]').val();
-        //     $(".color").css("background-color", color);
-        // });
-
-        $(function () {
-            //ラジオボタンをチェックしたら発動
-            $('input[type="radio"]').change(function () {
-                //選択したvalue値を変数に格納
+        $(function() {
+            $('input[type="radio"]').change(function() {
                 var color = $(this).val();
-                //選択したvalue値をp要素に出力
-                $(".color").css("background-color", color);
+                $(".overlay").css("background", color);
             });
         });
     </script>

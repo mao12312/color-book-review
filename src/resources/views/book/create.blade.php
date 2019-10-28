@@ -129,12 +129,6 @@
     </body>
 
     <script>
-        // $('[name=color]').change(function() {
-        //     var color = $('[name=color]').val();
-        //     console.log(color)
-        //     $(".color").css("background-color", color);
-        // });
-
         $(function() {
             $('input[type="radio"]').change(function() {
                 var color = $(this).val();
