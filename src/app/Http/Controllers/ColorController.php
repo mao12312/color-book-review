@@ -193,6 +193,7 @@ class ColorController extends Controller
         $author_b = dechex($author_b_avg);
 
         $author_rgb = "#" . $author_r . $author_g . $author_b;
+        dd($author_rgb);
 
         Author_master::where('id', $request->author_id)->update(['average_color' => $author_rgb]);
 

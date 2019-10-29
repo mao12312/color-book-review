@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <body>
-    <div class="book" style="display: none;">
+    <div class="book">
         <div class="book__page"></div>
         <div class="book__page"></div>
         <div class="book__page"></div>
     </div>
 
-    <div id="main">
+    <div id="main" style="display: none;">
         <div class="views" style="background: {{$author->average_color}};">
             <h6>{{$author->category}}</h6>
             <div class="text_area">
@@ -46,31 +46,15 @@
     </div>
     </body>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
-    $(function() {
-    var h = $(window).height();
-    
-    $('#main').css('display','none');
-    $('.book').height(h).css('display','block');
-    });
-    
-    $(window).load(function () { //全ての読み込みが完了したら実行
-    $('.book').delay(900).fadeOut(800);
-    // $('.book').delay(600).fadeOut(300);
-    $('#main').css('display', 'block');
-    });
-    
-    //10秒たったら強制的にロード画面を非表示
     $(function(){
-    setTimeout('stopload()',10000);
-    });
+        $('.book').hide().fadeIn(1500);
     
-    function stopload(){
-    $('#main').css('display','block');
-    $('.book').delay(900).fadeOut(800);
-    $('#loader').delay(600).fadeOut(300);
-    }
-</script>
+        setTimeout(function(){
+            $('.book').fadeOut(1000);
+            $('#main').delay(1000).fadeIn(1000);
+        },5000);
+    });
+    </script>
 
 @endsection
