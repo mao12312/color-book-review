@@ -53,7 +53,7 @@
         setTimeout(function(){
             $('.book').fadeOut(1000);
             $('#main').delay(1000).fadeIn(1000);
-        },5000);
+        },4000);
     });
     </script>
 
