@@ -25,7 +25,7 @@
                 <input type="hidden" value="{{$book->id}}" name="book_id">
                 <div class="row radio-tile-group mb-5">
                     <div class="col-lg-3 input-container">
-                        <input id="walk" class="radio-button red" type="radio" name="color" value="#FF4545"/>
+                        <input id="walk" class="radio-button red" type="radio" name="color" value="linear-gradient(315deg, rgba(255,150,150,0.6) 0%, rgba(255,69,69,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(255,150,150,1) 0%, rgba(255,69,69,1) 100%);">
                         </div>
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="bike" class="radio-button pink" type="radio" name="color" value="#FF45E2"/>
+                        <input id="bike" class="radio-button pink" type="radio" name="color" value="linear-gradient(315deg, rgba(255,150,239,0.6) 0%, rgba(255,69,226,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(255,150,239,1) 0%, rgba(255,69,226,1) 100%);">
                         </div>
@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="drive" class="radio-button purple" type="radio" name="color" value="#9B45FF"/>
+                        <input id="drive" class="radio-button purple" type="radio" name="color" value="linear-gradient(315deg, rgba(198,150,255,0.6) 0%, rgba(155,69,255,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(198,150,255,1) 0%, rgba(155,69,255,1) 100%);">
                         </div>
@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="fly" class="radio-button navy" type="radio" name="color" value="#455AFF"/>
+                        <input id="fly" class="radio-button navy" type="radio" name="color" value="linear-gradient(315deg, rgba(150,158,255,0.6) 0%, rgba(69,90,255,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(150,158,255,1) 0%, rgba(69,90,255,1) 100%);">
                         </div>
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="walk" class="radio-button blue" type="radio" name="color" value="#45B7FF"/>
+                        <input id="walk" class="radio-button blue" type="radio" name="color" value="linear-gradient(315deg, rgba(150,211,255,0.6) 0%, rgba(69,183,255,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(150,211,255,1) 0%, rgba(69,183,255,1) 100%);">
                         </div>
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="bike" class="radio-button skyBlue" type="radio" name="color" value="#45FFEA"/>
+                        <input id="bike" class="radio-button skyBlue" type="radio" name="color" value="linear-gradient(315deg, rgba(150,255,243,0.6) 0%, rgba(69,255,234,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(150,255,243,1) 0%, rgba(69,255,234,1) 100%);">
                         </div>
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="drive" class="radio-button green" type="radio" name="color" value="#45FF62"/>
+                        <input id="drive" class="radio-button green" type="radio" name="color" value="linear-gradient(315deg, rgba(150,255,166,0.6) 0%, rgba(69,255,98,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(150,255,166,1) 0%, rgba(69,255,98,1) 100%);">
                         </div>
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="fly" class="radio-button lime" type="radio" name="color" value="#BFFF45"/>
+                        <input id="fly" class="radio-button lime" type="radio" name="color" value="linear-gradient(315deg, rgba(219,255,150,0.6) 0%, rgba(191,255,69,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(219,255,150,1) 0%, rgba(191,255,69,1) 100%);">
                         </div>
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="walk" class="radio-button yellow" type="radio" name="color" value="#FFE245"/>
+                        <input id="walk" class="radio-button yellow" type="radio" name="color" value="linear-gradient(315deg, rgba(255,243,150,0.6) 0%, rgba(255,226,69,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(255,243,150,1) 0%, rgba(255,226,69,1) 100%);">
                         </div>
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="bike" class="radio-button orange" type="radio" name="color" value="#FF8545"/>
+                        <input id="bike" class="radio-button orange" type="radio" name="color" value="linear-gradient(315deg, rgba(255,190,150,0.6) 0%, rgba(255,133,69,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(255,190,150,1) 0%, rgba(255,133,69,1) 100%);">
                         </div>
@@ -105,7 +105,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="drive" class="radio-button black" type="radio" name="color" value="#111111"/>
+                        <input id="drive" class="radio-button black" type="radio" name="color" value="linear-gradient(315deg, rgba(85,85,85,0.6) 0%, rgba(17,17,17,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(85,85,85,1) 0%, rgba(17,17,17,1) 100%);">
                         </div>
@@ -113,7 +113,7 @@
                     </div>
 
                     <div class="col-lg-3 input-container">
-                        <input id="fly" class="radio-button white" type="radio" name="color" value="#F0F0F0"/>
+                        <input id="fly" class="radio-button white" type="radio" name="color" value="linear-gradient(315deg, rgba(250,250,250,0.6) 0%, rgba(240,240,240,0.6) 100%)"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 100%);">
                         </div>

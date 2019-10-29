@@ -50,9 +50,7 @@
     
 </head>
 
-<div class="app">
       @yield('content')
-</div>
 
 <!-- jQuery Plugins -->
 <script type="text/javascript" src="{{asset("js/jquery.min.js")}}"></script>
