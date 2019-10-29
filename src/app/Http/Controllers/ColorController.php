@@ -86,7 +86,38 @@ class ColorController extends Controller
 
         Book_master::where('id', $request->book_id)->update(['average_color' => $book_rgb]);
 
-        return redirect()->back();
+//        book result view
+//        $book = Book_master::findOrFail($request->id);
+//        $book_lists = Book_master::orderBy('created_at', 'desc')->get();
+//
+//        $data = [
+//            'book' => $book,
+//            'book_lists'=>$book_lists
+//        ];
+
+        return redirect()->route('book_result',[ 'id' => $request->id ]);
+//        return view('book.result')->with($data);
+    }
+    public function book_result($id)
+    {
+        //book result view
+        $book = Book_master::findOrFail($id);
+        $book_lists = Book_master::orderBy('created_at', 'desc')->get();
+
+        //review count
+        $review_counts = [];
+        foreach ($book_lists as $book_list) {
+            $review_count = Book::where('book_id', $book_list->id)->get()->count();
+            array_push($review_counts, $review_count);
+        }
+
+        $data = [
+            'book' => $book,
+            'book_lists'=>$book_lists,
+            "review_counts" => $review_counts
+        ];
+
+        return view('book.result')->with($data);
     }
 
     public function author_list()
@@ -165,6 +196,27 @@ class ColorController extends Controller
 
         Author_master::where('id', $request->author_id)->update(['average_color' => $author_rgb]);
 
-        return redirect()->back();
+        return redirect()->route('author_result',[ 'id' => $request->id ]);
+    }
+    public function author_result($id)
+    {
+        $author = Author_master::findOrFail($id);
+        $author_lists = Author_master::orderBy('created_at', 'desc')->get();
+
+        //review count
+        $review_counts = [];
+        foreach ($author_lists as $author_list) {
+            $review_count = Author::where('author_id', $author_list->id)->get()->count();
+            array_push($review_counts, $review_count);
+        }
+
+        $data = [
+            'author' => $author,
+            'author_lists'=>$author_lists,
+            "review_counts" => $review_counts
+
+        ];
+
+        return view('author.result')->with($data);
     }
 }
