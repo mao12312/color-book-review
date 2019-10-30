@@ -92,27 +92,28 @@
     </div>
     </body>
     <script>
-        $("#start").on('click',function(event){
-            event.preventDefault();
-            
-            // var linkUrl = $(this).attr('href');
-            $('#carouselExampleIndicators').fadeOut(1000);
-            $('.book').hide().delay(1000).fadeIn(1500);
-            
-            setTimeout(function(){
-                $('.book').fadeOut(1000);
-                $('.typewrite').fadeIn(1000);
+        $(function(){
+            $('body').addClass('animated fadeIn');
+            $("#start").on('click',function(event){
+                event.preventDefault();
+                $('#carouselExampleIndicators').fadeOut(1000);
+                $('.book').hide().delay(1000).fadeIn(1500);
+                
                 setTimeout(function(){
-                    $('.loading3').fadeIn(1000);
-                },4000);
-            },5000);
-            setTimeout(function(){
-                $('.typewrite').fadeOut(1000);
-            },12000);
-
-            setTimeout(function() {
-                window.location.href = '/author_list';
-            }, 12000);
+                    $('.book').fadeOut(1000);
+                    $('.typewrite').fadeIn(1000);
+                    setTimeout(function(){
+                        $('.loading3').fadeIn(1000);
+                    },4000);
+                },5000);
+                setTimeout(function(){
+                    $('.typewrite').fadeOut(1000);
+                },12000);
+    
+                setTimeout(function() {
+                    window.location.href = '/author_list';
+                }, 12000);
+            });
         });
     </script>
 @endsection

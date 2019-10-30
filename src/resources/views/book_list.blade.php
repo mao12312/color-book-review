@@ -29,23 +29,13 @@
         </div>
     </main>
     </body>
-    {{-- <script>
-        $(function(){
-            $('.book').hide().fadeIn(1500);
-            $('.asd').hide().fadeIn(1500);
-        
-            setTimeout(function(){
-                $('.book').fadeOut(1000);
-                $('.typewrite').fadeIn(1000);
-                setTimeout(function(){
-                    $('.loading3').fadeIn(1000);
-                },5000);
-            },5000);
-            setTimeout(function(){
-                $('.typewrite').fadeOut(1000);
-                $('.main').delay(1000).fadeIn(1000);
-            },12000);
+    <script>
+        $(function(){   
+            $('main').addClass('animated fadeIn');
+            $('a').on('click',function(){
+                $('main').addClass('animated fadeOut');
+            });
         });
-    </script> --}}
+    </script>
 
 @endsection    

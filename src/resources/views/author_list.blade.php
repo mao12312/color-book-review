@@ -30,7 +30,10 @@
     </main>
     <script>
         $(function(){   
-            $('main').hide().fadeIn(1000);
+            $('main').addClass('animated fadeIn');
+            $('a').on('click',function(){
+                $('main').addClass('animated fadeOut');
+            });
         });
     </script>
 @endsection
