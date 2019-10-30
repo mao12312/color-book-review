@@ -45,12 +45,14 @@
     
     <script>
     $(function(){
-        $('.book').hide().fadeIn(1500);
-    
+        $('.book').hide().fadeIn(2500);
         setTimeout(function(){
             $('.book').fadeOut(1000);
             $('#main').delay(1000).fadeIn(1000);
         },4000);
+        $('a').on('click',function(){
+            $('body').addClass('animated fadeOut');
+        });
     });
     </script>
 

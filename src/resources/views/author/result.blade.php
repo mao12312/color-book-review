@@ -26,7 +26,7 @@
                 <div class="row align-items-center">
                     @foreach ($author_lists as $author_list)
                         <div class="col-lg-3 creator_card">
-                            <a href="/author/create/{{$author_list->id}}">
+                            <a href="/author/create/{{$author_list->id}}" class="a">
                                 <?php $image = $author_list->image; ?>
                                 <img src="{{asset('Author_img/'.$image)}}" alt="" style="object-position: 0 25%;">
                                 <div class="overlay"></div>
@@ -48,12 +48,14 @@
 
     <script>
     $(function(){
-        $('.book').hide().fadeIn(1500);
-    
+        $('.book').hide().fadeIn(2500);
         setTimeout(function(){
             $('.book').fadeOut(1000);
             $('#main').delay(1000).fadeIn(1000);
         },4000);
+        $('a').on('click',function(){
+            $('body').addClass('animated fadeOut');
+        });
     });
     </script>
 
