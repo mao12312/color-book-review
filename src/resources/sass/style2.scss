@@ -16,6 +16,7 @@ html {
 body {
     font-family: 'Lato', 'Noto Sans JP', sans-serif;
     background: #fefefe;
+    padding: 0;
     color: $darkcolor;
 }
 
@@ -106,6 +107,37 @@ h6,
         height: -webkit-fill-available;
     }
 
+    .book{
+        margin-top: 500px;
+    }
+
+    .typewrite{
+        height: -webkit-fill-available;
+        text-align: center;
+
+        .line-1{
+            top: 0;
+            transform: translateY(0);
+            width: 100%;
+        }
+
+        h1{
+            letter-spacing: 2px;
+            margin-top: 370px;
+             font-size: 50px;   
+             margin-bottom: 40px;
+        }
+
+        h3{
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        p{
+            line-height: 50px;
+        }
+    }
+
     .back_button {
         top: 65px;
         position: fixed;
@@ -138,7 +170,6 @@ h6,
 
     .carousel {
         height: -webkit-fill-available;
-        height: fill-available;
 
         .carousel-indicators {
             margin-bottom: 3rem;
@@ -224,7 +255,7 @@ h6,
                         z-index: -5;
 
                         &.right {
-                            left: 120px;
+                            left: 200px;
                         }
                     }
                 }
@@ -462,10 +493,6 @@ main {
         }
     }
 }
-
-
-
-$primary-color: #079ad9;
 
 .color_palette {
     padding: 0 230px;

@@ -124,7 +124,7 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/js/sample.js */"./resources/js/sample.js");
+module.exports = __webpack_require__(/*! /Users/takuya/color-book-review/src/resources/js/sample.js */"./resources/js/sample.js");
 
 
 /***/ })
