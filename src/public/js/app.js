@@ -49528,10 +49528,10 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/sass/app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/sass/bookLoading.scss */"./resources/sass/bookLoading.scss");
-module.exports = __webpack_require__(/*! /Users/yuichi/color-book-review/src/resources/sass/style2.scss */"./resources/sass/style2.scss");
+__webpack_require__(/*! /Users/takuya/color-book-review/src/resources/js/app.js */"./resources/js/app.js");
+__webpack_require__(/*! /Users/takuya/color-book-review/src/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/takuya/color-book-review/src/resources/sass/bookLoading.scss */"./resources/sass/bookLoading.scss");
+module.exports = __webpack_require__(/*! /Users/takuya/color-book-review/src/resources/sass/style2.scss */"./resources/sass/style2.scss");
 
 
 /***/ })
