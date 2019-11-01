@@ -36,7 +36,7 @@ class AuthorMasterSeeder extends Seeder
                 'author'=> '太宰 治',
                 'image'=>'creator3.png',
                 'category'=>'小説家',
-                'masterpiece'=>'吾輩は猫である',
+                'masterpiece'=>'人間失格',
                 'default_color'=>'#F0F0F0',
                 'average_color'=>'#F0F0F0',
                 'created_at' => date('Y-m-d H:i:s'),
