@@ -27,7 +27,7 @@
                 <div class="row align-items-center">
                     @foreach($book_lists as $book_list)
                         <div class="col-lg-3 product_card">
-                            <a href="/book/create/{{$book_list->id}}">
+                            <a href="/book/create/{{$book_list->id}}" style=" opacity: 0.6; background: {{$book_list->average_color}};">
                                 <h6>{{$book_list->category}}</h6>
                                 <div class="text_area">
                                     <h4>{{ $book_list->title }}</h4>

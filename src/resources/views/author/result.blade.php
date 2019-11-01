@@ -29,8 +29,7 @@
                             <a href="/author/create/{{$author_list->id}}" class="a">
                                 <?php $image = $author_list->image; ?>
                                 <img src="{{asset('Author_img/'.$image)}}" alt="" style="object-position: 0 25%;">
-                                <div class="overlay"></div>
-    
+                                <div class="overlay" style=" opacity: 0.6; background: {{$author_list->average_color}};"></div>
                                 <h6>{{$author_list->category}}</h6>
                                 <div class="text_area">
                                     <h4>{{ $author_list->author }}</h4>
