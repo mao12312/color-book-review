@@ -414,6 +414,7 @@ main {
 .product_card a {
   position: relative;
   display: block;
+  border-radius: 10px;
 }
 
 .creator_card a .overlay,
