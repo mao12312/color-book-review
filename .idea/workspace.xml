@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fcd4b4f-53a4-4fe9-96bc-53df40b5a5b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/database/seeds/AuthorMasterSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/seeds/AuthorMasterSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/author/result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/author/result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/author_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/author_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/book/result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/book/result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/views/book_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/book_list.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,28 +21,19 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/database/seeds/BookMasterSeeder.php">
+            <entry file="file://$PROJECT_DIR$/src/resources/views/book/create.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+                <state relative-caret-position="210">
+                  <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/database/seeds/AuthorSeeder.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="26110">
-                  <caret line="3083" selection-start-line="3083" selection-end-line="3083" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="117">
-                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                <state relative-caret-position="350">
+                  <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
                   <folding>
                     <element signature="e#40#68#0#PHP" expanded="true" />
                   </folding>
@@ -48,19 +42,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/Book_master.php">
+            <entry file="file://$PROJECT_DIR$/src/resources/views/layouts/app.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                <state relative-caret-position="504">
+                  <caret line="66" selection-start-line="66" selection-end-line="66" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/package.json">
+            <entry file="file://$PROJECT_DIR$/src/resources/sass/style2.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="29" selection-start-line="29" selection-end-line="29" />
+                <state relative-caret-position="9142">
+                  <caret line="680" column="27" selection-start-line="680" selection-start-column="27" selection-end-line="680" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -68,8 +62,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/resources/views/book_list.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="70">
-                  <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+                <state relative-caret-position="308">
+                  <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/resources/views/author_list.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="294">
+                  <caret line="22" column="107" lean-forward="true" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
                 </state>
               </provider>
             </entry>
@@ -79,19 +82,33 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/resources/views/book/create.blade.php">
+            <entry file="file://$PROJECT_DIR$/src/resources/views/author/create.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+                <state relative-caret-position="2296">
+                  <caret line="173" column="11" selection-start-line="173" selection-start-column="11" selection-end-line="173" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/.env">
+            <entry file="file://$PROJECT_DIR$/src/resources/views/book/create.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+                <state relative-caret-position="67">
+                  <caret line="99" column="30" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#1248#1340#0#HTML" expanded="true" />
+                    <element signature="e#1727#1820#0#HTML" expanded="true" />
+                    <element signature="e#2211#2304#0#HTML" expanded="true" />
+                    <element signature="e#2694#2786#0#HTML" expanded="true" />
+                    <element signature="e#3173#3266#0#HTML" expanded="true" />
+                    <element signature="e#3657#3750#0#HTML" expanded="true" />
+                    <element signature="e#4144#4236#0#HTML" expanded="true" />
+                    <element signature="e#4625#4718#0#HTML" expanded="true" />
+                    <element signature="e#5107#5200#0#HTML" expanded="true" />
+                    <element signature="e#5592#5685#0#HTML" expanded="true" />
+                    <element signature="e#6077#6165#0#HTML" expanded="true" />
+                    <element signature="e#6555#6649#0#HTML" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -99,56 +116,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/resources/views/author/result.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
+                <state relative-caret-position="369">
+                  <caret line="36" column="110" selection-start-line="36" selection-start-column="110" selection-end-line="36" selection-end-column="110" />
                   <folding>
-                    <element signature="e#1171#1202#0#HTML" expanded="true" />
+                    <element signature="e#1257#1324#0#HTML" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/database/seeds/AuthorMasterSeeder.php">
+            <entry file="file://$PROJECT_DIR$/src/resources/views/book/result.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/resources/views/layouts/app.blade.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="602">
-                  <caret line="43" selection-start-line="43" selection-end-line="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/resources/views/author/create.blade.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="644">
-                  <caret line="46" selection-start-line="46" selection-end-line="137" selection-end-column="101" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/css/bookLoading.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/public/css/typewriter.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="98">
-                  <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+                <state relative-caret-position="408">
+                  <caret line="34" column="104" lean-forward="true" selection-start-line="34" selection-start-column="104" selection-end-line="34" selection-end-column="104" />
                 </state>
               </provider>
             </entry>
@@ -218,18 +199,18 @@
         <option value="$PROJECT_DIR$/src/app/Book_master.php" />
         <option value="$PROJECT_DIR$/src/app/Author_master.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/BookMasterSeeder.php" />
-        <option value="$PROJECT_DIR$/src/resources/views/book_list.blade.php" />
         <option value="$PROJECT_DIR$/src/resources/views/book/create.blade.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/BookSeeder.php" />
         <option value="$PROJECT_DIR$/src/resources/views/partials/header.blade.php" />
         <option value="$PROJECT_DIR$/src/routes/web.php" />
-        <option value="$PROJECT_DIR$/src/resources/views/author_list.blade.php" />
         <option value="$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php" />
         <option value="$PROJECT_DIR$/src/resources/views/author/create.blade.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/AuthorSeeder.php" />
-        <option value="$PROJECT_DIR$/src/resources/views/book/result.blade.php" />
-        <option value="$PROJECT_DIR$/src/resources/views/author/result.blade.php" />
         <option value="$PROJECT_DIR$/src/database/seeds/AuthorMasterSeeder.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/author/result.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/book/result.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/book_list.blade.php" />
+        <option value="$PROJECT_DIR$/src/resources/views/author_list.blade.php" />
       </list>
     </option>
   </component>
@@ -347,6 +328,12 @@
               <item name="color-book-review" type="b2602c69:ProjectViewProjectNode" />
               <item name="color-book-review" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="color-book-review" type="b2602c69:ProjectViewProjectNode" />
+              <item name="color-book-review" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -456,7 +443,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134113000" />
+    <option name="totallyTimeSpent" value="134159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -468,9 +455,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-438" y="86" width="1396" height="877" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19128509" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" />
@@ -484,7 +472,7 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32923833" />
-      <window_info active="true" anchor="bottom" x="223" y="634" width="1440" height="878" id="Terminal" maximized="true" order="11" visible="true" weight="0.2886866" />
+      <window_info anchor="bottom" x="223" y="634" width="1440" height="878" id="Terminal" maximized="true" order="11" visible="true" weight="0.27272728" />
       <window_info anchor="right" id="PlantUML" order="0" />
       <window_info anchor="right" id="Key Promoter X" order="1" />
       <window_info anchor="right" id="Database" order="2" />
@@ -710,25 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/sass/style2.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/author_list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/book/result.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="29" column="77" lean-forward="true" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
-          <folding>
-            <element signature="e#983#1033#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="9142">
+          <caret line="680" column="27" selection-start-line="680" selection-start-column="27" selection-end-line="680" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -760,17 +731,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/book_list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Http/Controllers/ColorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="350">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
@@ -779,8 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/views/book/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="110" column="1" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -791,17 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/views/author/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="46" selection-start-line="46" selection-end-line="137" selection-end-column="101" />
+        <state relative-caret-position="2296">
+          <caret line="173" column="11" selection-start-line="173" selection-start-column="11" selection-end-line="173" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -819,20 +776,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/views/author/result.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="31" column="73" selection-start-line="31" selection-start-column="73" selection-end-line="31" selection-end-column="73" />
-          <folding>
-            <element signature="e#1171#1202#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/database/seeds/AuthorMasterSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/author/result.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="36" column="110" selection-start-line="36" selection-start-column="110" selection-end-line="36" selection-end-column="110" />
+          <folding>
+            <element signature="e#1257#1324#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/book/result.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="34" column="104" lean-forward="true" selection-start-line="34" selection-start-column="104" selection-end-line="34" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/book_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/views/author_list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="22" column="107" lean-forward="true" selection-start-line="22" selection-start-column="107" selection-end-line="22" selection-end-column="107" />
         </state>
       </provider>
     </entry>
