@@ -20,7 +20,7 @@
                             <div class="text_area">
                                 <h4>{{ $author_list->author }}</h4>
                                 <h5>{{$author_list->masterpiece}}</h5>
-                                <span><i class='uil uil-comment-alt-notes'></i>  {{$review_counts[($author_list->id)-1]}}review</span>
+{{--                                <span><i class='uil uil-comment-alt-notes'></i>  {{$review_counts[($author_list->id)-1]}}review</span>--}}
                             </div>
                         </a>
                     </div>
