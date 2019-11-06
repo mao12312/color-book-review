@@ -29,6 +29,11 @@
                 <i class='uil uil-arrow-left'></i>
             </a>
         </div>
+        <button class="switch_button" style="bottom: 65px;right: 65px;
+        position: fixed;
+        z-index: 3;
+        width: 60px;
+opacity: 0.05"><i class='uil uil-cog '></i></button>
         <div class="row align-items-center">
             <div class="col-lg-6 creator_show">
                 <?php $image = $author->image; ?>
@@ -44,9 +49,9 @@
             <form class="col-lg-6 color_palette" method="POST" action="/author/create/{{$author->id}}/store">
                 @csrf
                 <input type="hidden" value="{{$author->id}}" name="author_id">
-
-                <div class="row radio-tile-group mb-5">
-                    {{-- <div class="col-lg-3 input-container">
+                {{--color-12--}}
+                <div class="row radio-tile-group mb-5 color-12">
+                    <div class="col-lg-3 input-container">
                         <input id="walk" class="radio-button red" type="radio" name="color" value="#FF4545"/>
                         <div class="radio-tile"
                              style="background: linear-gradient(315deg, rgba(255,150,150,1) 0%, rgba(255,69,69,1) 100%);">
@@ -140,199 +145,202 @@
                              style="background: linear-gradient(315deg, rgba(250,250,250,1) 0%, rgba(240,240,240,1) 100%);">
                         </div>
                         <label for="fly" class="radio-tile-label">White</label>
-                    </div> --}}
+                    </div>
+                </div>
 
-                        <div class="col-lg-3 input-container">
-                            <input id="walk" class="radio-button" type="radio" name="color" value="#723132"/>
-                            <div class="radio-tile"
-                                 style="background: #723132;">
-                            </div>
-                            <label for="walk" class="radio-tile-label">焦げ茶</label>
+                {{--color-24--}}
+                <div class="row radio-tile-group mb-5 color-24">
+                    <div class="col-lg-3 input-container">
+                        <input id="walk" class="radio-button" type="radio" name="color" value="#723132"/>
+                        <div class="radio-tile"
+                             style="background: #723132;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="bike" class="radio-button" type="radio" name="color" value="#BF4638"/>
-                            <div class="radio-tile"
-                                 style="background: #BF4638;">
-                            </div>
-                            <label for="bike" class="radio-tile-label">茶</label>
+                        <label for="walk" class="radio-tile-label">Dark brown</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="bike" class="radio-button" type="radio" name="color" value="#BF4638"/>
+                        <div class="radio-tile"
+                             style="background: #BF4638;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="drive" class="radio-button" type="radio" name="color" value="#F03133"/>
-                            <div class="radio-tile"
-                                 style="background: #F03133;">
-                            </div>
-                            <label for="drive" class="radio-tile-label">赤</label>
+                        <label for="bike" class="radio-tile-label">Brown</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="drive" class="radio-button" type="radio" name="color" value="#F03133"/>
+                        <div class="radio-tile"
+                             style="background: #F03133;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="fly" class="radio-button" type="radio" name="color" value="#F1742E"/>
-                            <div class="radio-tile"
-                                 style="background: #F1742E;">
-                            </div>
-                            <label for="fly" class="radio-tile-label">朱</label>
+                        <label for="drive" class="radio-tile-label">Red</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="fly" class="radio-button" type="radio" name="color" value="#F1742E"/>
+                        <div class="radio-tile"
+                             style="background: #F1742E;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="walk" class="radio-button" type="radio" name="color" value="#EEA82D"/>
-                            <div class="radio-tile"
-                                 style="background: #EEA82D;">
-                            </div>
-                            <label for="walk" class="radio-tile-label">橙</label>
+                        <label for="fly" class="radio-tile-label">Vermilion</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="walk" class="radio-button" type="radio" name="color" value="#EEA82D"/>
+                        <div class="radio-tile"
+                             style="background: #EEA82D;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="bike" class="radio-button" type="radio" name="color" value="#E4C71A"/>
-                            <div class="radio-tile"
-                                 style="background: #E4C71A;">
-                            </div>
-                            <label for="bike" class="radio-tile-label">蜜柑</label>
+                        <label for="walk" class="radio-tile-label">Orange</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="bike" class="radio-button" type="radio" name="color" value="#E4C71A"/>
+                        <div class="radio-tile"
+                             style="background: #E4C71A;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="drive" class="radio-button" type="radio" name="color" value="#EFCE8A"/>
-                            <div class="radio-tile"
-                                 style="background: #EFCE8A;">
-                            </div>
-                            <label for="drive" class="radio-tile-label">肌色</label>
+                        <label for="bike" class="radio-tile-label">Tangerine</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="drive" class="radio-button" type="radio" name="color" value="#EFCE8A"/>
+                        <div class="radio-tile"
+                             style="background: #EFCE8A;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="fly" class="radio-button" type="radio" name="color" value="#EEF419"/>
-                            <div class="radio-tile"
-                                 style="background: #EEF419;">
-                            </div>
-                            <label for="fly" class="radio-tile-label">檸檬</label>
+                        <label for="drive" class="radio-tile-label">Beige</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="fly" class="radio-button" type="radio" name="color" value="#EEF419"/>
+                        <div class="radio-tile"
+                             style="background: #EEF419;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="walk" class="radio-button" type="radio" name="color" value="#DFDA20"/>
-                            <div class="radio-tile"
-                                 style="background: #DFDA20;">
-                            </div>
-                            <label for="walk" class="radio-tile-label">黄色</label>
+                        <label for="fly" class="radio-tile-label">Lemon</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="walk" class="radio-button" type="radio" name="color" value="#DFDA20"/>
+                        <div class="radio-tile"
+                             style="background: #DFDA20;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="bike" class="radio-button" type="radio" name="color" value="#B6A124"/>
-                            <div class="radio-tile"
-                                 style="background: #B6A124;">
-                            </div>
-                            <label for="bike" class="radio-tile-label">黄土</label>
+                        <label for="walk" class="radio-tile-label">Yellow</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="bike" class="radio-button" type="radio" name="color" value="#B6A124"/>
+                        <div class="radio-tile"
+                             style="background: #B6A124;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="drive" class="radio-button" type="radio" name="color" value="#8ABC3A"/>
-                            <div class="radio-tile"
-                                 style="background: #8ABC3A;">
-                            </div>
-                            <label for="drive" class="radio-tile-label">黄緑</label>
+                        <label for="bike" class="radio-tile-label">Ocher</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="drive" class="radio-button" type="radio" name="color" value="#8ABC3A"/>
+                        <div class="radio-tile"
+                             style="background: #8ABC3A;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="fly" class="radio-button" type="radio" name="color" value="#3EAB61"/>
-                            <div class="radio-tile"
-                                 style="background: #3EAB61;">
-                            </div>
-                            <label for="fly" class="radio-tile-label">緑色</label>
+                        <label for="drive" class="radio-tile-label">Yellow green</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="fly" class="radio-button" type="radio" name="color" value="#3EAB61"/>
+                        <div class="radio-tile"
+                             style="background: #3EAB61;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="walk" class="radio-button" type="radio" name="color" value="#3E7D3A"/>
-                            <div class="radio-tile"
-                                 style="background: #3E7D3A;">
-                            </div>
-                            <label for="walk" class="radio-tile-label">深緑</label>
+                        <label for="fly" class="radio-tile-label">Green</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="walk" class="radio-button" type="radio" name="color" value="#3E7D3A"/>
+                        <div class="radio-tile"
+                             style="background: #3E7D3A;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="bike" class="radio-button" type="radio" name="color" value="#3D9BE9"/>
-                            <div class="radio-tile"
-                                 style="background: #3D9BE9;">
-                            </div>
-                            <label for="bike" class="radio-tile-label">水色</label>
+                        <label for="walk" class="radio-tile-label">Dark green</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="bike" class="radio-button" type="radio" name="color" value="#3D9BE9"/>
+                        <div class="radio-tile"
+                             style="background: #3D9BE9;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="drive" class="radio-button" type="radio" name="color" value="#3871C3"/>
-                            <div class="radio-tile"
-                                 style="background: #3871C3;">
-                            </div>
-                            <label for="drive" class="radio-tile-label">青色</label>
+                        <label for="bike" class="radio-tile-label">Light blue</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="drive" class="radio-button" type="radio" name="color" value="#3871C3"/>
+                        <div class="radio-tile"
+                             style="background: #3871C3;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="fly" class="radio-button" type="radio" name="color" value="#275798"/>
-                            <div class="radio-tile"
-                                 style="background: #275798;">
-                            </div>
-                            <label for="fly" class="radio-tile-label">藍色</label>
+                        <label for="drive" class="radio-tile-label">Blue</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="fly" class="radio-button" type="radio" name="color" value="#275798"/>
+                        <div class="radio-tile"
+                             style="background: #275798;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="walk" class="radio-button" type="radio" name="color" value="#38319A"/>
-                            <div class="radio-tile"
-                                 style="background: #38319A;">
-                            </div>
-                            <label for="walk" class="radio-tile-label">群青</label>
+                        <label for="fly" class="radio-tile-label">Indigo</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="walk" class="radio-button" type="radio" name="color" value="#38319A"/>
+                        <div class="radio-tile"
+                             style="background: #38319A;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="bike" class="radio-button" type="radio" name="color" value="#8B52A1"/>
-                            <div class="radio-tile"
-                                 style="background: #8B52A1;">
-                            </div>
-                            <label for="bike" class="radio-tile-label">紫色</label>
+                        <label for="walk" class="radio-tile-label">Ultramarine</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="bike" class="radio-button" type="radio" name="color" value="#8B52A1"/>
+                        <div class="radio-tile"
+                             style="background: #8B52A1;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="drive" class="radio-button" type="radio" name="color" value="#CE3D9C"/>
-                            <div class="radio-tile"
-                                 style="background: #CE3D9C;">
-                            </div>
-                            <label for="drive" class="radio-tile-label">赤紫</label>
+                        <label for="bike" class="radio-tile-label">Purple</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="drive" class="radio-button" type="radio" name="color" value="#CE3D9C"/>
+                        <div class="radio-tile"
+                             style="background: #CE3D9C;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="fly" class="radio-button" type="radio" name="color" value="#F2A1C2"/>
-                            <div class="radio-tile"
-                                 style="background: #F2A1C2;">
-                            </div>
-                            <label for="fly" class="radio-tile-label">桃色</label>
+                        <label for="drive" class="radio-tile-label">Magenta</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="fly" class="radio-button" type="radio" name="color" value="#F2A1C2"/>
+                        <div class="radio-tile"
+                             style="background: #F2A1C2;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="walk" class="radio-button" type="radio" name="color" value="#AF8C3C"/>
-                            <div class="radio-tile"
-                                 style="background: #AF8C3C;">
-                            </div>
-                            <label for="walk" class="radio-tile-label">朽葉</label>
+                        <label for="fly" class="radio-tile-label">Pink</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="walk" class="radio-button" type="radio" name="color" value="#AF8C3C"/>
+                        <div class="radio-tile"
+                             style="background: #AF8C3C;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="bike" class="radio-button" type="radio" name="color" value="#BDB7BD"/>
-                            <div class="radio-tile"
-                                 style="background: #BDB7BD;">
-                            </div>
-                            <label for="bike" class="radio-tile-label">灰色</label>
+                        <label for="walk" class="radio-tile-label">Decayed leaf color</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="bike" class="radio-button" type="radio" name="color" value="#BDB7BD"/>
+                        <div class="radio-tile"
+                             style="background: #BDB7BD;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="drive" class="radio-button" type="radio" name="color" value="#000E00"/>
-                            <div class="radio-tile"
-                                 style="background: #000E00;">
-                            </div>
-                            <label for="drive" class="radio-tile-label">黒色</label>
+                        <label for="bike" class="radio-tile-label">Gray</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="drive" class="radio-button" type="radio" name="color" value="#000E00"/>
+                        <div class="radio-tile"
+                             style="background: #000E00;">
                         </div>
-    
-                        <div class="col-lg-3 input-container">
-                            <input id="fly" class="radio-button" type="radio" name="color" value="#f0f0f0"/>
-                            <div class="radio-tile"
-                                 style="background: #f0f0f0;">
-                            </div>
-                            <label for="fly" class="radio-tile-label">白色</label>
+                        <label for="drive" class="radio-tile-label">Black</label>
+                    </div>
+
+                    <div class="col-lg-3 input-container">
+                        <input id="fly" class="radio-button" type="radio" name="color" value="#f0f0f0"/>
+                        <div class="radio-tile"
+                             style="background: #f0f0f0;">
                         </div>
+                        <label for="fly" class="radio-tile-label">White</label>
+                    </div>
                 </div>
                 <button type="submit" role="button" data-slide="next" class="arrow_btn w-100 start">
                     レビューする
@@ -345,20 +353,39 @@
     </body>
 
     <script>
-        $(function() {
-            $('input[type="radio"]').change(function() {
+        $(function () {
+            $('input[type="radio"]').change(function () {
                 var color = $(this).val();
                 $(".overlay").css("background", color);
                 $(".overlay").css("opacity", 0.6);
             });
         });
-        $(function(){   
+        $(function () {
             $('body').addClass('animated fadeIn');
-            $('a').on('click',function(){
+            $('a').on('click', function () {
                 $('body').addClass('animated fadeOut');
             });
-            $('.start').on('click',function(){
+            $('.start').on('click', function () {
                 $('body').addClass('animated fadeOut');
+            });
+        });
+
+        $(document).ready(function () {
+
+            $('.color-12').show();
+            $('.color-24').hide();
+
+            $('.switch_button').click(function () {
+
+                $('.home_fill').toggleClass('switch');
+
+                if ($('.home_fill').hasClass('switch')) {
+                    $('.color-12').hide();
+                    $('.color-24').show();
+                } else {
+                    $('.color-12').show();
+                    $('.color-24').hide();
+                }
             });
         });
     </script>

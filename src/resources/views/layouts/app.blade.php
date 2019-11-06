@@ -46,7 +46,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     
-    <link type="text/css" rel="stylesheet" href="{{asset('css/style2.css')}}" />
+    {{--<link type="text/css" rel="stylesheet" href="{{asset('css/style2.css')}}" />--}}
     
 </head>
 
