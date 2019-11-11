@@ -16,10 +16,11 @@
         var chart = new Chart(ctx, {
             type: 'doughnut',
             data : {
-                datasets: [{
-                    data: colors['data']
-                }],
                 labels: colors['labels'],
+                datasets: [{
+                    data: colors['data'],
+                    backgroundColor:colors['labels']
+                }],
             }
       })
     </script>
