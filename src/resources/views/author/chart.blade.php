@@ -3,7 +3,14 @@
     <body>
       @include('partials.header')
       <main>
-          <canvas id="myChart"></canvas>
+        <div class="views" style="background: {{$author->average_color}};">
+            <h6>{{$author->category}}</h6>
+            <div class="text_area">
+                <h4>{{$author->author}}</h4>
+                <h5>代表作：{{$author->masterpiece}}</h5>
+            </div>
+        </div>
+        <canvas id="myChart"></canvas>
       </main>
     </body>
     
