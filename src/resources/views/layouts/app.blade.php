@@ -6,27 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>COLOR BOOK REVIEW ｜ “本”という文字情報を”色”という別の情報でレビューする</title>
-    <meta name="format-detection" content="email=no,telephone=no,address=no">
-    <meta name="description" content="近もく会は様々なバックグラウンドを持つ人々が自主的に集って学習し、プログラミングという能力を用いて自ら周りの人に“何か“を与えようとする人々の集まりです。">
-    <meta property="og:url" content="http://kinmoku.tech">
-    <meta property="og:title" content="近もく会 | デザイン学習初心者の為の学生コミュニティー">
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-          content="近もく会は様々なバックグラウンドを持つ人々が自主的に集って学習し、プログラミングという能力を用いて自ら周りの人に“何か“を与えようとする人々の集まりです。">
-    <meta property="og:image" content="http://kinmoku.tech/img/background1.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:site_name" content="近もく会 ｜ different languages, create fantasy with us">
-    <meta property="og:locale" content="ja_JP">
-
-    <link rel="icon" href="img/kinmoku-logo1.png" sizes="16x16" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/kinmoku-logo1.png">
-    <link rel="shortcut icon" href="img/kinmoku-logo1.png" type="image/x-icon">
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
     <!-- Unicons -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.4/css/unicons.css">
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v0.0.4/css/unicons.css"> -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.0.1/css/unicons.css">
 
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

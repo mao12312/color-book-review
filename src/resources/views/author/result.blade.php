@@ -20,7 +20,8 @@
             @include('partials.header')
             <main>
                 <div class="title">
-                    <h2>Author<span>作家・クリエイター</span></h2>
+                    <h2>Creator<span>作家・クリエイター</span></h2>
+                    <p>レビューされた色の平均化した色がこちらです。</p>
                 </div>
     
                 <div class="row align-items-center">

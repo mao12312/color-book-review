@@ -8,7 +8,7 @@
                 <a href="{{'/'}}">ガイドページ</a>
             </li>
             <li>
-                <a href="{{'/author_list'}}">Author</a>
+                <a href="{{'/author_list'}}">Creator</a>
             </li>
             <li>
                 <a href="{{'/book_list'}}">Book</a>

@@ -29,6 +29,8 @@ opacity: 0.05"><i class='uil uil-cog '></i></button>
                 @csrf
                 <input type="hidden" value="{{$book->id}}" name="book_id">
                 {{--color-12--}}
+
+                <h4 style="text-align:center;margin-bottom: 30px;">この本に、あう色を決めてください</h4>
                 <div class="row radio-tile-group mb-5 color-12">
                     <div class="col-lg-3 input-container">
                         <input id="walk" class="radio-button red" type="radio" name="color" value="#FF4545"/>
@@ -324,7 +326,7 @@ opacity: 0.05"><i class='uil uil-cog '></i></button>
                 <button type="submit" role="button" data-slide="next" class="arrow_btn w-100 start"
                         onclick="location.href='/book/result/{{$book->id}}'">
                     レビューする
-                    <span><i class='uil uil-angle-right-b'></i></span>
+                    <span><i class='uil uil-telegram-alt'></i></span>
                 </button>
             </form>
         </div>
