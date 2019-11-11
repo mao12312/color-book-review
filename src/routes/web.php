@@ -23,6 +23,9 @@ Route::post('/book/create/{id}/store', 'ColorController@book_store');
 
 Route::get('/book/result/{id}', 'ColorController@book_result')->name('book_result');
 
+// Route::get('/book/chart/{id}', 'ColorController@book_chart')->name('book_chart');
+
+
 Route::get('/author_list','ColorController@author_list');
 
 Route::get('/author/create/{id}', 'ColorController@author_create');
@@ -30,3 +33,5 @@ Route::get('/author/create/{id}', 'ColorController@author_create');
 Route::post('/author/create/{id}/store', 'ColorController@author_store');
 
 Route::get('/author/result/{id}', 'ColorController@author_result')->name('author_result');
+
+Route::get('/author/chart/{id}', 'ColorController@author_chart')->name('author_chart');
