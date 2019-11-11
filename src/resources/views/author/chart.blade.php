@@ -15,7 +15,6 @@
         var ctx = document.getElementById('myChart');
         var chart = new Chart(ctx, {
             type: 'doughnut',
-
             data : {
                 datasets: [{
                     data: colors['data']
