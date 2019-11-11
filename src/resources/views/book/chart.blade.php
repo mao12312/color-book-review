@@ -1,10 +1,17 @@
 @extends('layouts.app')
 @section('content')
     <body>
-      @include('partials.header')
-      <main>
-          <canvas id="myChart"></canvas>
-      </main>
+        @include('partials.header')
+        <main>
+            <div class="views" style="background: {{$book->average_color}};">
+                <h6>{{$book->category}}</h6>
+                <div class="text_area">
+                    <h4>{{$book->title}}</h4>
+                    <h5>作：{{$book->author}}</h5>
+                </div>
+            </div>
+            <canvas id="myChart"></canvas>
+        </main>
     </body>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>

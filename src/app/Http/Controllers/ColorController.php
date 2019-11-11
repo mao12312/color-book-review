@@ -238,14 +238,19 @@ class ColorController extends Controller
 
     public function book_chart($id)
     {
+        $book = Book_master::findOrFail($id);
         $book_colors = Book::where('book_id', $id)->pluck('color')->toArray();
         $count_colors = array_count_values($book_colors);
         $color_lists = [
             'labels' => array_keys($count_colors),
             'data' => array_values($count_colors),//データ
         ];
+        $data = [
+            'color_lists' => $color_lists,
+            'book' => $book
+        ];
 
-        return view('book.chart')->with('color_lists', $color_lists);
+        return view('book.chart')->with($data);
     }
 }
 
