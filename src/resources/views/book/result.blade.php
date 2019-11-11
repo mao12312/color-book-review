@@ -22,6 +22,7 @@
             <main>
                 <div class="title">
                     <h2>PRODUCT<span>本・作品</span></h2>
+                    <p>レビューされた色の平均化した色がこちらです。</p>
                 </div>
     
                 <div class="row align-items-center">

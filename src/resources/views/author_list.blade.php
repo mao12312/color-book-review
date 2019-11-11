@@ -6,6 +6,7 @@
         <div class="main">
             <div class="title">
                 <h2>CREATOR<span>作家・クリエイター</span></h2>
+                <p>好きなクリエイターを選択してください。</p>
             </div>
     
             <div class="row align-items-center">

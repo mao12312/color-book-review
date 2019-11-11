@@ -10,6 +10,7 @@
         <div class="main">
             <div class="title">
                 <h2>PRODUCT<span>本・作品</span></h2>
+                <p>好きな本を選択してください。</p>
             </div>
     
             <div class="row align-items-center">
