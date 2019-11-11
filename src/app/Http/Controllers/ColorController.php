@@ -222,92 +222,22 @@ class ColorController extends Controller
 
     public function author_chart($id)
     {
-        // $labels = [
-        //     "Red(#FF4545)",
-        //     "Pink(#FF45E2)",
-        //     "Purple(#9B45FF)",
-        //     "Navy(#455AFF)",
-        //     "Blue(#45B7FF)",
-        //     "Sky Blue(#45FFEA)",
-        //     "Green(#45FF62)",
-        //     "Lime(#BFFF45)",
-        //     "Yellow(#FFE245)",
-        //     "Orange(#FF8545)",
-        //     "Black(#111111)",
-        //     "White(#f0f0f0)",
-        //     "Dark brown(#723132)",
-        //     "Brown(#BF4638)",
-        //     "Red(#F03133)",
-        //     "Vermilion(#F1742E)",
-        //     "Orange(#EEA82D)",
-        //     "Tangerine(#E4C71A)",
-        //     "Beige(#EFCE8A)",
-        //     "Lemon(#EEF419)",
-        //     "Yellow(#DFDA20)",
-        //     "Ocher(#B6A124)",
-        //     "Yellow green(#8ABC3A)",
-        //     "Green(#3EAB61)",
-        //     "Dark green(#3E7D3A)",
-        //     "Light blue(#3D9BE9)",
-        //     "Blue(#3871C3)",
-        //     "Indigo(#275798)",
-        //     "Ultramarine(#38319A)",
-        //     "Purple(#8B52A1)",
-        //     "Magenta(#CE3D9C)",
-        //     "Pink(#F2A1C2)",
-        //     "Decayed leaf color(#AF8C3C)",
-        //     "Gray(#BDB7BD)",
-        // ];
-
+        $author = Author_master::findOrFail($id);
         $author_colors = Author::where('author_id', $id)->pluck('color')->toArray();
         $count_colors = array_count_values($author_colors);
         $color_lists = [
             'labels' => array_keys($count_colors),
             'data' => array_values($count_colors),//データ
         ];
-
-        return view('author.chart')->with('color_lists', $color_lists);
+        $data = [
+            'color_lists' => $color_lists,
+            'author' => $author
+        ];
+        return view('author.chart')->with($data);
     }
 
     public function book_chart($id)
     {
-        // $labels = [
-        //     "Red(#FF4545)",
-        //     "Pink(#FF45E2)",
-        //     "Purple(#9B45FF)",
-        //     "Navy(#455AFF)",
-        //     "Blue(#45B7FF)",
-        //     "Sky Blue(#45FFEA)",
-        //     "Green(#45FF62)",
-        //     "Lime(#BFFF45)",
-        //     "Yellow(#FFE245)",
-        //     "Orange(#FF8545)",
-        //     "Black(#111111)",
-        //     "White(#f0f0f0)",
-        //     "Dark brown(#723132)",
-        //     "Brown(#BF4638)",
-        //     "Red(#F03133)",
-        //     "Vermilion(#F1742E)",
-        //     "Orange(#EEA82D)",
-        //     "Tangerine(#E4C71A)",
-        //     "Beige(#EFCE8A)",
-        //     "Lemon(#EEF419)",
-        //     "Yellow(#DFDA20)",
-        //     "Ocher(#B6A124)",
-        //     "Yellow green(#8ABC3A)",
-        //     "Green(#3EAB61)",
-        //     "Dark green(#3E7D3A)",
-        //     "Light blue(#3D9BE9)",
-        //     "Blue(#3871C3)",
-        //     "Indigo(#275798)",
-        //     "Ultramarine(#38319A)",
-        //     "Purple(#8B52A1)",
-        //     "Magenta(#CE3D9C)",
-        //     "Pink(#F2A1C2)",
-        //     "Decayed leaf color(#AF8C3C)",
-        //     "Gray(#BDB7BD)",
-        // ];
-
         $book_colors = Book::where('book_id', $id)->pluck('color')->toArray();
         $count_colors = array_count_values($book_colors);
         $color_lists = [
