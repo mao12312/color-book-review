@@ -14,6 +14,7 @@
                 <h4>{{$author->author}}</h4>
                 <h5>代表作：{{$author->masterpiece}}</h5>
             </div>
+            <a href="/author/chart/{{$author->id}}" style="opacity: 0.01"><i class='uil uil-cog '></i></a>
         </div>
     
         <div class="views_sticky">

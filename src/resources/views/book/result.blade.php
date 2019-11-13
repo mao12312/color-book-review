@@ -13,6 +13,7 @@
             <div class="text_area">
                 <h4>{{$book->title}}</h4>
                 <h5>作：{{$book->author}}</h5>
+                <a href="/book/chart/{{$book->id}}" style="opacity: 0.01"><i class='uil uil-cog '></i></a>
             </div>
         </div>
     
