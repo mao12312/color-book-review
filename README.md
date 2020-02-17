@@ -15,4 +15,4 @@ $ docker-compose exec db bash -c 'mysql -u${MYSQL_USER} -p${MYSQL_PASSWORD} ${MY
 #pc再起動時 docker-compose 再起動
 $ docker-compose start
 ```
-[http://127.0.0.1:10080](http://127.0.0.1:10080)
+port:[http://127.0.0.1:10080](http://127.0.0.1:10080)
